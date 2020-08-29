@@ -24,7 +24,7 @@ body{
     position: relative;
     width: 400px;
     height: 400px;
-    margin: 60px 0;
+    margin: 60px;
     background: #000;
     transform-style: preserve-3d;
 }
