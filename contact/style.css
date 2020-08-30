@@ -113,7 +113,7 @@ body{
     resize: none;
 }
 
-input[type="submit"]{
+#form-submit{
     border: none;
     padding: 7px 35px;
     cursor: pointer;

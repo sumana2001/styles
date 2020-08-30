@@ -9,10 +9,11 @@
 <body>
     <div class="container">
         <h2>Contact Us</h2>
+        <form action="contact.php" method="post" id="form" class="contact-form">
         <div class="row100">
             <div class="col">
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input name="cf_name" type="text" class="form-control" id="name" required="required">
                     <span class="text">Name</span>
                     <span class="line"></span>
                 </div>
@@ -21,7 +22,7 @@
         <div class="row100">
             <div class="col">
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input name="cf_email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*"  required="required">
                     <span class="text">Email</span>
                     <span class="line"></span>
                 </div>
@@ -30,7 +31,7 @@
         <div class="row100">
             <div class="col">
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input name="cf_phone" type="number" class="form-control" id="phone"  required="required">
                     <span class="text">Mobile</span>
                     <span class="line"></span>
                 </div>
@@ -39,7 +40,7 @@
         <div class="row100">
             <div class="col">
                 <div class="inputBox textarea">
-                    <textarea required="required"></textarea>
+                    <textarea name="cf_message" rows="6" class="form-control" id="message" required="required"></textarea>
                     <span class="text">Type your message here...</span>
                     <span class="line"></span>
                 </div>
@@ -47,9 +48,10 @@
         </div>
         <div class="row100">
             <div class="col">
-                <input type="submit" value="Send">
+                <button type="submit" id="form-submit" class="filled-button">Send</button>
             </div>
         </div>    
+    </form>
     </div>
 </body>
 </html>
