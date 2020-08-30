@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap')
-
+*
 {
     margin:0;
     padding:0;
-    font-family: 'Roboto',sans-serif;
-
 }
-
-
 
 body
 {
@@ -19,7 +14,7 @@ body
     
 }
 
-.cointainer
+.container
 {
     position:relative;
     width:900px;
@@ -27,15 +22,14 @@ body
     justify-content: space-around;
 }
 
-.cointainer .card
+.container .card
 {
     position: relative;
-    widows: 250px;
+    width: 250px;
     background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
     display: flex;
     justify-content: center;
     align-items:center;
-
     height:300px;
     border-radius:4px;
     text-align:center;
@@ -43,21 +37,21 @@ body
     transition:0.5s;
 }
 
-.cointainer .card:hover
+.container .card:hover
 {
-    transform: translate(-10px);
+    transform: translateY(-10px);
     box-shadow:0 15px 35px rgba(0,0,0,.5);
 }
 
-.cointainer .card:before
+.container .card:before
 {
     content: '';
     position:absolute;
     top:0;
-    left:0;
+    left:-50%;
     width:100%;
     height: 100%;
-    background:rgba(255,255,255,.03)
+    background:rgba(255,255,255,.03);
     pointer-events:none;
     z-index:1;
 }
@@ -85,7 +79,7 @@ body
     border-radius:50%;
 }
 
-.percent number h2
+.percent .number h2
 {
     color:#777;
     font-weight:700;
@@ -101,6 +95,7 @@ body
 .percent .number h2 span{
     font-size:24px;
     color:#777;
+    transition: 0.5s;
 }
 
 
@@ -111,7 +106,7 @@ body
 .text{
     position: relative;
     color:#777;
-    margin-top:20px;;
+    margin-top:20px;
     font-weight: 700;
     font-size:18px;
     letter-spacing: 1px;
@@ -140,20 +135,19 @@ svg circle
 
 svg circle:nth-child(2)
 {
-    stroke-dashoffset:440;
+    stroke-dashoffset: 440;
     stroke-dasharray: 440;
 }
 
-.card:nth-child(1) svg circle:nth-child(2)
-{   stroke-dashoffset: clac(440-(440*90)/100);
-    stroke:#00ff43;
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke: #00ff43;
+    stroke-dashoffset: calc(440 - (440 * 90) /100);
 }
-.card:nth-child(2) svg circle:nth-child(2)
-{   stroke-dashoffset: clac(440-(440*85)/100);
-    stroke:#00a1ff;
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke: #00a1ff;
+    stroke-dashoffset: calc(440 - (440 * 60) /100);
 }
-.card:nth-child(3) svg circle:nth-child(2)
-{   
-    stroke-dashoffset: clac(440-(440*60)/100);
-    stroke:#ff04f7;
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke: #ff04f7;
+    stroke-dashoffset: calc(440 - (440 * 70) /100);
 }
