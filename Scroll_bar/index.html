@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <section>
+        <h2>Creative Page Scroll</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quos est voluptatibus, dolore perspiciatis debitis minus natus! Necessitatibus aperiam magnam, ab autem expedita facilis laudantium quos doloremque reprehenderit id.</p>
+    
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll=$(window).scrollTop(),
+            dh=$(document).height(),
+            wh=$(window).height();
+            scrollPercent=(scroll/(dh-wh))*100;
+            $('#progressbar').css('height',scrollPercent+'%');
+        })
+    </script>
+</body>
+</html>
