@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+  /*background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);*/
+  background-image: linear-gradient(90deg,#142536,#063118,#06263b,#4d100a,#300a41);
+  background-size: 400% 400%;
+  animation: bganimation 120s infinite;
+}
+.text{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 350px 0;
+  font-size: 22px;
+}
+
+@keyframes bganimation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
