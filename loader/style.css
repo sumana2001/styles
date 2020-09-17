@@ -1,0 +1,41 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+}
+
+.loader > span{
+    display: inline-block;
+    background-color: purple;
+    width: 0px; 
+    height: 0px;
+    border-radius: 50%;
+    margin: 0 8px;
+    transform: translate3d(0);
+    animation: bounce 0.6s infinite alternate;
+}
+
+.loader > span:nth-child(2){
+    background-color: palevioletred;
+    animation-delay: 0.2s;
+}
+.loader > span:nth-child(3){
+    background-color: plum;
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce{
+    to{
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -16px, 0);
+    }
+}
+
+.main{
+    text-align: center;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
+}
