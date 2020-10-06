@@ -2,7 +2,6 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Montserrat",sans-serif;
-  background: #333;
 }
 h1{
   font-size: 200px;
@@ -14,7 +13,7 @@ h1{
   left: 50%;
   transform: translate(-50%,-50%);
   margin: 0;
-  background: url(aliferous_circle.png) 50% 50%;
+  background: url(bg.jpg) 50% 50%;
   background-size: cover;
   -webkit-text-fill-color:transparent;
   -webkit-background-clip:text;
