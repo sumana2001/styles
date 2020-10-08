@@ -1,6 +1,6 @@
 # Styles
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <h4>We aim to make this repo the one stop solution for amazing effects using html, css and javascript.</h4>
 
@@ -46,6 +46,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://linktr.ee/sztxr"><img src="https://avatars0.githubusercontent.com/u/20822553?v=4" width="100px;" alt=""/><br /><sub><b>Eszter</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=sztxr" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Dhamodhar-DDR"><img src="https://avatars3.githubusercontent.com/u/56181018?v=4" width="100px;" alt=""/><br /><sub><b>Dhamodhar </b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=Dhamodhar-DDR" title="Code">💻</a></td>
   </tr>
 </table>
 
