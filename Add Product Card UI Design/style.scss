@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+@mixin flex($flex, $fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+body {
+    height: 100vh;
+    @include flex(flex, row, center, center);
+    background: #131313;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    &.blue {
+        &::before {
+            background: #034ff4;
+        }
+        .content {
+            .size {
+                span {
+                    &:hover {
+                        background: #034ff4;
+                    }
+                }
+            }
+        }
+    }
+    &.red {
+        &::before {
+            background: #ff0015;
+        }
+        .content {
+            .size {
+                span {
+                    &:hover {
+                        background: #ff0015;
+                    }
+                }
+            }
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #9bdc28;
+        clip-path: circle(150px at 80% 20%);
+        transition: .5s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            clip-path: circle(300px at 80% -20%);
+        }
+        .img {
+            transform: translateY(-90%);
+        }
+        .content {
+            transform: translateY(-85%);
+            .buyNow {
+                opacity: 1;
+                // transform: translateY(0px);
+            }
+            .color {
+                opacity: 1;
+                visibility: visible;
+                transition-delay: .6s;
+            }
+            .size {
+                opacity: 1;
+                visibility: visible;
+                transition-delay: .3s;
+            }
+        }
+    }
+    &::after {
+        content: "Nike";
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.04);
+    }
+    .img {
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        top: 50%;
+        transition: .5s;
+        z-index: 10000;
+        text-align: center;
+        line-height: 240px;
+        transform: translateY(-50%);
+        img {
+            width: 270px;
+            transform: rotate(25deg);
+        }
+    }
+    .content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+        h2 {
+            font-weight: 600px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        #product {
+            h3 {
+                font-weight: 300;
+                font-size: 14px;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+        .size, .color {
+            opacity: 0;
+            visibility: hidden;
+            transition: .5s;
+        }
+        .size {
+            z-index: 999;
+            span {
+                width: 26px;
+                height: 26px;
+                text-align: center;
+                line-height: 26px;
+                font-size: 14px;
+                display: inline-block;
+                color: #111;
+                background: #fff;
+                margin: 0 5px;
+                transition: .5s;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover {
+                    background: #9bdc28;
+                }
+            }
+        }
+        .color {
+            z-index: 999;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            span {
+                width: 26px;
+                height: 26px;
+                text-align: center;
+                line-height: 26px;
+                font-size: 14px;
+                display: inline-block;
+                color: #111;
+                background: #9bdc28;
+                margin: 0 5px;
+                transition: .5s;
+                border-radius: 50%;
+                cursor: pointer;
+                &:nth-child(2) {
+                    background: #03a9f4;
+                }
+                &:last-child {
+                    background: #e91e63;
+                }
+            }
+        }
+        .buyNow {
+            padding: 10px 20px;
+            color: #000;
+            background: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.5s;
+            opacity: 0;
+            transition-delay: opacity 1s;
+            transform: translateY(50px);
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+}
