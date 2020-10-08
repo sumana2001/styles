@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+   <title>Buuton Ripple Effect</title>
+  </head>
+  
+  <body>
+    <a class="btn-1" href="#">Ripple Effect</a>
+    <script type="text/javascript">
+      const buttons = document.querySelectorAll('a');
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function(event) {
+          let x = event.clientX - event.target.offsetLeft;
+          let y = event.clientY - event.target.offsetTop;
+          let rippleElement = document.createElement('span');
+          rippleElement.style.left = x +  'px';
+          rippleElement.style.top = y + 'px';
+          this.appendChild(rippleElement);
+          setTimeout(function() {
+            rippleElement.remove();
+          }, 800);
+        });
+      });
+    </script>
+  </body>
+</html>
