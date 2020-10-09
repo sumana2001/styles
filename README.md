@@ -1,6 +1,6 @@
 # Styles
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <h4>We aim to make this repo the one stop solution for amazing effects using html, css and javascript.</h4>
 
@@ -52,6 +52,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://amulyadixit07@gmail.com"><img src="https://avatars0.githubusercontent.com/u/66437295?v=4" width="100px;" alt=""/><br /><sub><b>Amulya</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=Amulya-coder" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Aldhanekaa"><img src="https://avatars1.githubusercontent.com/u/67791514?v=4" width="100px;" alt=""/><br /><sub><b>Aldhaneka</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=Aldhanekaa" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/bineetNaidu"><img src="https://avatars0.githubusercontent.com/u/66471461?v=4" width="100px;" alt=""/><br /><sub><b>bineetNaidu</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=bineetNaidu" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/orama254"><img src="https://avatars1.githubusercontent.com/u/50571688?v=4" width="100px;" alt=""/><br /><sub><b>ramadevsign</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=orama254" title="Code">💻</a></td>
   </tr>
 </table>
 
