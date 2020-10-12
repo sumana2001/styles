@@ -85,6 +85,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "MeghalBisht",
+      "name": "Meghal Bisht",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/61330148?v=4",
+      "profile": "https://resume-meghal.herokuapp.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
