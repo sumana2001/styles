@@ -27,6 +27,7 @@ ul li a
 {
   color: #333;
   text-decoration: none;
+width: 250px;
   font-size: 3em;
   padding: 5px 20px;
   display: inline-flex;
@@ -41,6 +42,7 @@ ul li:hover a
 {
   color: #000;
   background: rgba(255,255,255,1);
+
 }
 ul li a:before
 {
@@ -94,4 +96,29 @@ ul li:nth-child(6n+5) a:before
 ul li:nth-child(6n+6) a:before
 {
   background: #ffeaa7;
+}
+
+
+ul li{
+
+}
+ul li span {
+  width: 40px;
+  height:40px;
+  border-radius: 10px;
+  background:#ccff33;
+
+  position:absolute;
+
+  transition: 0.5s;
+  transform: translateX(0);
+  opacity: 0.8;
+  margin-top:24px;
+
+
+}
+ul li:hover span {
+  transform:translateX(-360px);
+  opacity: 1
+
 }
