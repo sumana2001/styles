@@ -1,0 +1,152 @@
+body {
+    background-image: url(./background.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.container {
+    width: 85%;
+    height: 40px;
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+}
+
+#logo {
+    position: absolute;
+    color: white;
+    margin-top: -180px;
+    font-family: Arial;
+}
+.navbar {
+    position: relative;
+}
+.nav-button {
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 100px;
+    background: transparent;
+    cursor: pointer;
+}
+.nav-button:hover {
+    transform: scale(1.1);
+}
+.nav-button .fa {
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+}
+.nav-menu {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background: white;
+    height: 100%;
+    transform: skew(0deg) translate(100%,0);
+    transform-origin: top right;
+    transition: all .2s ease-in;
+    z-index: -1;
+}
+.nav-menu ul {
+    transform: skew(-8deg);
+    transform-origin: top left;
+    position: fixed;
+    right: 120px;
+    top: 120px;
+    width: 400px;
+    text-align: right;
+}
+.nav-menu ul li {
+    list-style: none;
+    font-family: Impact;
+    font-weight: 300;
+    color: hsl(0,0%,10%);
+    position: relative;
+    z-index: 999;
+    font-size: 32px;
+    line-height: 64px;
+}
+.nav-menu ul li a {
+    border: none;
+    color: hsl(0,0%,10%);
+    text-decoration: none;
+}
+.nav-menu.active {
+    transform: skewX(8deg) translate(0,0);
+}
+.nav-menu li {
+    opacity: 0;
+    transform: translate(0,10px);
+    transition: all .0s ease-in .3s;
+}
+.nav-menu.active li {
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 0.2s ease-in 0s;
+}
+.nav-menu.active li:nth-child(1) {
+    transition-delay: .3s;
+}
+.nav-menu.active li:nth-child(2) {
+    transition-delay: .4s;
+}
+.nav-menu.active li:nth-child(3) {
+    transition-delay: .5s;
+}
+.nav-menu.active li:nth-child(4) {
+    transition-delay: .6s;
+}
+.nav-menu.active li:nth-child(5) {
+    transition-delay: .7s;
+}
+.nav-menu.active li:nth-child(6) {
+    transition-delay: .8s;
+}
+.nav-menu.active li:nth-child(7) {
+    transition-delay: .9s;
+}
+
+.hero h1{
+    margin-top: 178px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 26px;
+    letter-spacing: 4px;
+    color: white;
+}
+span{
+    font-size: 65px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.button {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 40px;
+}
+.button1 {
+    padding: 12px 25px;
+    background: #f20c4a;
+    text-decoration: none;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.button2 {
+    padding: 12px 25px;
+    background: white;
+    text-decoration: none;
+    color: black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
