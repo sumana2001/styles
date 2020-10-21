@@ -1,6 +1,6 @@
 # Styles
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <h4>We aim to make this repo the one stop solution for amazing effects using html, css and javascript.</h4>
 
@@ -61,6 +61,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/jahnavi1111"><img src="https://avatars3.githubusercontent.com/u/69074843?v=4" width="100px;" alt=""/><br /><sub><b>Jahnavi Juluri</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=jahnavi1111" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/chaitrahanchinal0612"><img src="https://avatars2.githubusercontent.com/u/64026392?v=4" width="100px;" alt=""/><br /><sub><b>chaitrahanchinal0612</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=chaitrahanchinal0612" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Anushree176"><img src="https://avatars0.githubusercontent.com/u/56468158?v=4" width="100px;" alt=""/><br /><sub><b>Anushree176</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=Anushree176" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/pratyushakatti13"><img src="https://avatars2.githubusercontent.com/u/64535305?v=4" width="100px;" alt=""/><br /><sub><b>Pratyusha Katti</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=pratyushakatti13" title="Code">💻</a></td>
   </tr>
 </table>
 
