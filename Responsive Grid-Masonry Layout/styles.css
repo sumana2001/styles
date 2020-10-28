@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Syne Mono', sans-serif;  
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #555;
+}
+
+/* header {
+  position: absolute;
+  top: 1em;
+} */
+
+.container {
+  width: 1600px;
+  max-width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+  padding: 40px;
+}
+
+.container .box {
+  background: #555;
+  background-image: linear-gradient(45deg, #666, #999);
+  padding: 1em;
+  font-size: 1.6em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  transition: background 300ms;
+}
+
+.container .box:hover {
+  background: #476e9b;
+  background-image: linear-gradient(45deg, #29588d, #3688e6);
+}
+
+.container .box img {
+  position: relative;
+  max-width: 100px;
+}
+
+.container .box:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.container .box:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.container .box:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.container .box:nth-child(5) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .container .box {
+    grid-column: unset !important;
+    grid-row: unset !important
+  }
+}
