@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(134, 134, 134);
+  /* background: rgb(134, 134, 134); */
 }
 
 /*Let's hide radio buttons, we will be using their "checked" property, however*/
@@ -31,7 +31,8 @@ body {
 /*each label element will be our carousel card, we can add imgs as background later on*/
 .container label {
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
+  max-width: 600px;
   height: 100%;
   border-radius: 2px;
   position: absolute;
@@ -44,6 +45,7 @@ body {
   background-position: center;
 }
 
+/*farthest left back position*/
 #c1:checked ~ #card4, 
 #c2:checked ~ #card5, 
 #c3:checked ~ #card1, 
@@ -51,8 +53,10 @@ body {
 #c5:checked ~ #card3 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(-30%, 0, -200px);
+  filter: blur(4px); 
 }
 
+/*left back position*/
 #c1:checked ~ #card5,
 #c2:checked ~ #card1,
 #c3:checked ~ #card2,
@@ -60,8 +64,10 @@ body {
 #c5:checked ~ #card4 {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
   transform: translate3d(-15%,0,-100px);
+  filter: blur(2px);
 }
 
+/*center up front position*/
 #c1:checked ~ #card1,
 #c2:checked ~ #card2,
 #c3:checked ~ #card3,
@@ -69,8 +75,10 @@ body {
 #c5:checked ~ #card5 {
   box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
   transform: translate3d(0,0,0);
+  cursor: inherit;
 }
 
+/*right back position*/
 #c1:checked ~ #card2,
 #c2:checked ~ #card3,
 #c3:checked ~ #card4,
@@ -78,8 +86,10 @@ body {
 #c5:checked ~ #card1 {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
   transform: translate3d(15%,0,-100px);
+  filter: blur(2px);
 }
 
+/*farthest right back position*/
 #c1:checked ~ #card3,
 #c2:checked ~ #card4,
 #c3:checked ~ #card5,
@@ -87,6 +97,7 @@ body {
 #c5:checked ~ #card2 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(30%,0,-200px);
+  filter: blur(4px);
 }
 
 #card1 {
