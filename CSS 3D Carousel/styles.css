@@ -26,6 +26,7 @@ body {
   position: relative;
   perspective: 1000px; /*the bigger the value, the more spread out our cards will be*/
   transform-style: preserve-3d;
+  pointer-events: none;
 }
 
 /*each label element will be our carousel card, we can add imgs as background later on*/
@@ -43,6 +44,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: auto;
 }
 
 /*farthest left back position*/
