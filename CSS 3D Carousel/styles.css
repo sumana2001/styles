@@ -101,51 +101,51 @@ body {
 }
 
 #card1 {
-  color: rgba(246, 190, 6,.6);
+  color: rgba(246, 190, 6,1);
   border-left: 10px solid;
   border-right: 10px solid;
   border: 10px solid;
   background-color: rgba(246, 190, 6,.6);
-  background-image: url('img/1-ethan-unzicker-yp6LjT-28GU-unsplash.jpg');
+  background-image: url('img/1-ethan-unzicker-yp6LjT-28GU-unsplash-min.jpg');
   /*<span>Photo by <a href="https://unsplash.com/@ethanunzicker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Unzicker</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
 }
 
 #card2 {
-  color: rgba(134, 189, 25,.6);
+  color: rgba(134, 189, 25,1);
   border-left: 10px solid;
   border-right: 10px solid;
   border: 10px solid;
   background-color: rgba(134, 189, 25,.6);
-  background-image: url('img/2-ethan-unzicker-nx3cTJciWHw-unsplash.jpg');
+  background-image: url('img/2-ethan-unzicker-nx3cTJciWHw-unsplash-min.jpg');
   /*<span>Photo by <a href="https://unsplash.com/@ethanunzicker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Unzicker</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
 }
 
 #card3 {
-  color: rgba(20, 112, 155,.6);
+  color: rgba(20, 112, 155,1);
   border-left: 10px solid;
   border-right: 10px solid;
   border: 10px solid;
   background-color: rgba(20, 112, 155,.6);
-  background-image: url('img/3-ethan-unzicker-XIS_RPOdGTE-unsplash.jpg');
+  background-image: url('img/3-ethan-unzicker-XIS_RPOdGTE-unsplash-min.jpg');
 /*<span>Photo by <a href="https://unsplash.com/@ethanunzicker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Unzicker</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
 }
 
 #card4 {
-  color: rgba(4, 121, 49,.6);
+  color: rgba(4, 121, 49,1);
   border-left: 10px solid;
   border-right: 10px solid;
   border: 10px solid;
   background-color: rgba(4, 121, 49,.6);
-  background-image: url('img/4-arturo-castaneyra-l21xOiJ6UZM-unsplash.jpg');
+  background-image: url('img/4-arturo-castaneyra-l21xOiJ6UZM-unsplash-min.jpg');
 /*<span>Photo by <a href="https://unsplash.com/@castaneyra?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Arturo Castaneyra</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
 }
 
 #card5 {
-  color: rgba(216, 6, 6,.6);
+  color: rgba(216, 6, 6,1);
   border-left: 10px solid;
   border-right: 10px solid;
   border: 10px solid;
   background-color: rgba(216, 6, 6,.6);
-  background-image: url('img/5-colter-olmstead-hIAs3Rrwl2A-unsplash.jpg');
+  background-image: url('img/5-colter-olmstead-hIAs3Rrwl2A-unsplash-min.jpg');
 /*<span>Photo by <a href="https://unsplash.com/@colterolmstead?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Colter Olmstead</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
 }
