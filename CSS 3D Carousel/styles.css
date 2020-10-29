@@ -8,9 +8,9 @@
 
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
+  justify-items: center;
   /* background: rgb(134, 134, 134); */
 }
 
@@ -20,25 +20,27 @@ body {
 }
 
 .container {
-  flex: 1;
-  padding: 1em;
-  height: 50vmin;
-  position: relative;
+  padding: 0 4em;
+  height: 55vmin;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "card";
+  justify-items: center;
   perspective: 1000px; /*the bigger the value, the more spread out our cards will be*/
   transform-style: preserve-3d;
-  pointer-events: none;
+  pointer-events: none; /*This fixes firefox issue, that would otherwise not let us click on the imgs in the back*/
 }
 
 /*each label element will be our carousel card, we can add imgs as background later on*/
 .container label {
-  margin: 0 auto;
+  display: block;
+  grid-area: card;
   width: 100%;
   max-width: 600px;
   height: 100%;
   border-radius: 2px;
-  position: absolute;
-  left: 0;
-  right: 0;
   cursor: pointer;
   transition: transform 300ms;
   background-size: cover;
