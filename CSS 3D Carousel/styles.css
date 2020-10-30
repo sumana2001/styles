@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  /* background: rgb(134, 134, 134); */
+}
+
+/*Let's hide radio buttons, we will be using their "checked" property, however*/
+[type=radio] {
+  display: none;
+}
+
+.container {
+  padding: 0 4em;
+  height: 55vmin;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "card";
+  justify-items: center;
+  perspective: 1000px; /*the bigger the value, the more spread out our cards will be*/
+  transform-style: preserve-3d;
+  pointer-events: none; /*This fixes firefox issue, that would otherwise not let us click on the imgs in the back*/
+}
+
+/*each label element will be our carousel card, we can add imgs as background later on*/
+.container label {
+  display: block;
+  grid-area: card;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 300ms;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: auto;
+}
+
+/*farthest left back position*/
+#c1:checked ~ #card4, 
+#c2:checked ~ #card5, 
+#c3:checked ~ #card1, 
+#c4:checked ~ #card2, 
+#c5:checked ~ #card3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%, 0, -200px);
+  filter: blur(4px); 
+}
+
+/*left back position*/
+#c1:checked ~ #card5,
+#c2:checked ~ #card1,
+#c3:checked ~ #card2,
+#c4:checked ~ #card3,
+#c5:checked ~ #card4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+  filter: blur(2px);
+}
+
+/*center up front position*/
+#c1:checked ~ #card1,
+#c2:checked ~ #card2,
+#c3:checked ~ #card3,
+#c4:checked ~ #card4,
+#c5:checked ~ #card5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+  cursor: inherit;
+}
+
+/*right back position*/
+#c1:checked ~ #card2,
+#c2:checked ~ #card3,
+#c3:checked ~ #card4,
+#c4:checked ~ #card5,
+#c5:checked ~ #card1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+  filter: blur(2px);
+}
+
+/*farthest right back position*/
+#c1:checked ~ #card3,
+#c2:checked ~ #card4,
+#c3:checked ~ #card5,
+#c4:checked ~ #card1,
+#c5:checked ~ #card2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+  filter: blur(4px);
+}
+
+#card1 {
+  color: rgba(246, 190, 6,1);
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border: 10px solid;
+  background-color: rgba(246, 190, 6,.6);
+  background-image: url('img/1-ethan-unzicker-yp6LjT-28GU-unsplash-min.jpg');
+  /*<span>Photo by <a href="https://unsplash.com/@ethanunzicker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Unzicker</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+}
+
+#card2 {
+  color: rgba(134, 189, 25,1);
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border: 10px solid;
+  background-color: rgba(134, 189, 25,.6);
+  background-image: url('img/2-ethan-unzicker-nx3cTJciWHw-unsplash-min.jpg');
+  /*<span>Photo by <a href="https://unsplash.com/@ethanunzicker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Unzicker</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+}
+
+#card3 {
+  color: rgba(20, 112, 155,1);
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border: 10px solid;
+  background-color: rgba(20, 112, 155,.6);
+  background-image: url('img/3-ethan-unzicker-XIS_RPOdGTE-unsplash-min.jpg');
+/*<span>Photo by <a href="https://unsplash.com/@ethanunzicker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ethan Unzicker</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+}
+
+#card4 {
+  color: rgba(4, 121, 49,1);
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border: 10px solid;
+  background-color: rgba(4, 121, 49,.6);
+  background-image: url('img/4-arturo-castaneyra-l21xOiJ6UZM-unsplash-min.jpg');
+/*<span>Photo by <a href="https://unsplash.com/@castaneyra?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Arturo Castaneyra</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+}
+
+#card5 {
+  color: rgba(216, 6, 6,1);
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border: 10px solid;
+  background-color: rgba(216, 6, 6,.6);
+  background-image: url('img/5-colter-olmstead-hIAs3Rrwl2A-unsplash-min.jpg');
+/*<span>Photo by <a href="https://unsplash.com/@colterolmstead?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Colter Olmstead</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+}
