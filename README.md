@@ -1,6 +1,6 @@
 # Styles
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <h4>We aim to make this repo the one stop solution for amazing effects using html, css and javascript.</h4>
 
@@ -66,6 +66,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/pratyushakatti13"><img src="https://avatars2.githubusercontent.com/u/64535305?v=4" width="100px;" alt=""/><br /><sub><b>Pratyusha Katti</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=pratyushakatti13" title="Code">💻</a></td>
     <td align="center"><a href="https://pablowbk.github.io"><img src="https://avatars3.githubusercontent.com/u/36734796?v=4" width="100px;" alt=""/><br /><sub><b>Pablo</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=pablowbk" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/himanshubobade"><img src="https://avatars3.githubusercontent.com/u/65915522?v=4" width="100px;" alt=""/><br /><sub><b>himanshubobade</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=himanshubobade" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/hariramjp777"><img src="https://avatars2.githubusercontent.com/u/58631762?v=4" width="100px;" alt=""/><br /><sub><b>Hari Ram</b></sub></a><br /><a href="https://github.com/sumana2001/styles/commits?author=hariramjp777" title="Code">💻</a></td>
   </tr>
 </table>
 
