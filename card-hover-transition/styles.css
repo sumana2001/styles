@@ -25,6 +25,7 @@ main {
   border-radius: 8px;
   cursor: pointer;
   padding: 20px;
+  position: relative;
 }
 
 .card .card-img {
@@ -40,4 +41,113 @@ main {
 .card .card-body p {
   font-size: 15px;
   line-height: 1.5;
+}
+
+.fade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.fade:hover::before {
+  opacity: 1;
+}
+
+.come-from-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  z-index: -1;
+  transition: bottom 0.6s ease;
+}
+
+.come-from-top:hover::before {
+  bottom: 0;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+  z-index: -1;
+  transition: clip-path 0.6s ease;
+}
+
+.triangle:hover::before {
+  clip-path: polygon(0% 0%, 200% 0%, 0% 200%);
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  clip-path: circle(0% at 50% 50%);
+  z-index: -1;
+  transition: clip-path 0.6s ease;
+}
+
+.circle:hover::before {
+  clip-path: circle(70% at 50% 50%);
+}
+
+.inset::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  clip-path: inset(100%);
+  z-index: -1;
+  transition: clip-path 0.6s ease;
+}
+
+.inset:hover::before {
+  clip-path: inset(0);
+}
+
+.left-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s ease;
+}
+
+.left-right:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
