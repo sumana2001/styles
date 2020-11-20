@@ -1,3 +1,5 @@
+/* Basic CSS resets */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +15,16 @@ body {
   font-family: sans-serif;
 }
 
+/* main element containing cards is grid */
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   margin: 10px;
 }
+
+/* style for cards */
 
 .card {
   border: 1px solid #e5e5e5;
@@ -43,6 +49,8 @@ main {
   line-height: 1.5;
 }
 
+/* Fade in and out */
+
 .fade::before {
   content: "";
   position: absolute;
@@ -61,6 +69,8 @@ main {
   opacity: 1;
 }
 
+/* come from top using positions*/
+
 .come-from-top::before {
   content: "";
   position: absolute;
@@ -77,6 +87,8 @@ main {
 .come-from-top:hover::before {
   bottom: 0;
 }
+
+/* trinangle clip-path */
 
 .triangle::before {
   content: "";
@@ -96,6 +108,8 @@ main {
   clip-path: polygon(0% 0%, 200% 0%, 0% 200%);
 }
 
+/* circle clip-path */
+
 .circle::before {
   content: "";
   position: absolute;
@@ -114,6 +128,8 @@ main {
   clip-path: circle(70% at 50% 50%);
 }
 
+/* inset clip-path */
+
 .inset::before {
   content: "";
   position: absolute;
@@ -131,6 +147,8 @@ main {
 .inset:hover::before {
   clip-path: inset(0);
 }
+
+/* scale in hover */
 
 .left-right::before {
   content: "";
