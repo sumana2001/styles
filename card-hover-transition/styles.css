@@ -1,3 +1,5 @@
+/* styles for card-hover-transition - hariramjp777 */
+
 /* Basic CSS resets */
 
 * {
@@ -168,4 +170,36 @@ main {
 .left-right:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+/* i-card for faq using clip-path */
+
+.i-card {
+  width: calc(200% + 20px);
+  padding: 60px;
+  clip-path: circle(7% at 92% 15%);
+  background-color: powderblue;
+  transition: clip-path 0.6s ease;
+}
+
+.i-card span {
+  position: absolute;
+  top: 10%;
+  right: 7.3%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.i-card:hover {
+  clip-path: circle(70% at 50% 50%);
+}
+
+.i-card:hover span {
+  display: none;
+}
+
+@media (max-width: 556px) {
+  .i-card {
+    width: 100%;
+  }
 }
