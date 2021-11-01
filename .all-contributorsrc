@@ -175,6 +175,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "AdavizeTheFirst",
+      "name": "AdavizeTheFirst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42492202?v=4",
+      "profile": "https://adavizethefirst.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
