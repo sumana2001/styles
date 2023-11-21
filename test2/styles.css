@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.header-title {
+    transition: color 0.3s ease-in-out;
+}
+
+.header-title:hover {
+    color: #ffcc00;
+}
+
+.nav {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-section {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-section:hover {
+    transform: scale(1.02);
+}
+
+.section-title {
+    transition: color 0.3s ease-in-out;
+}
+
+.section-title:hover {
+    color: #ffcc00;
+}
+
+.section-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.section-button:hover {
+    background-color: #45a049;
+}
