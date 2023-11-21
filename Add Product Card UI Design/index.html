@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="img/green.png" alt="" id="image">
+        </div>
+        <div class="content">
+            <h2>Nike Shoes</h2>
+            <div class="size" id="product">
+                <h3>Size :</h3>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+            </div>
+            <div class="color" id="product">
+                <h3>Colors :</h3>
+                <span class="Color" id="blue"></span>
+                <span class="Color" id="green"></span>
+                <span class="Color" id="red"></span>
+            </div>
+            <a href="" class="buyNow">Buy Now</a>
+        </div>
+    </div>
+    <script>
+        const colors = document.querySelectorAll('.Color');
+        const image = document.querySelector('#image')
+        const classes = []
+        colors.forEach(e => {
+            classes.push(e.id)
+            e.addEventListener('click', function () {
+                const parentEl = this.parentElement.parentElement.parentElement
+                console.log(this.id)
+                if (classes.includes(parentEl.classList[1])) {
+                    parentEl.classList.remove(parentEl.classList[1])
+                }
+                image.setAttribute('src', `img/${this.id}.png`)
+                parentEl.classList.add(this.id)
+                // console.log(parentEl.classList)
+            })
+        })
+    </script>
+    <noscript>
+        You have to enable javascript
+    </noscript>
+</body>
+
+</html>

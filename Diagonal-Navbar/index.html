@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>digonal nav</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <nav class="menu-activea">
+  <h1>NAVBAR</h1>
+  <ul>
+    <li>HOME</li>
+    <li>GALLERY</li>
+    <li>TEAM</li>
+    <li>SERVICES</li>
+    <li>ABOUT</li>
+    <li>WORK</li>
+    <li>FAQ</li>
+  </ul>
+</nav>
+<main>
+  <section>
+   <br><br><br>
+    <h1>&larr; DIAGONAL SHAPED NAV</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     
+    
+    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     
+  </section>
+</main>
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+    
+</script>
+</body>
+</html>

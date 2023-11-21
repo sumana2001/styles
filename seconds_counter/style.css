@@ -1,0 +1,28 @@
+.section-counters {
+    background: rgb(224, 109, 109);
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-counters:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-counters h4 {
+    color: #fff;
+    margin: 25px 0 0;
+}
+
+.site-section p.counter {
+    font-size: 100px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    line-height: 0.8;
+}

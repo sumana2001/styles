@@ -1,0 +1,37 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ionicons';
+}
+.a1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.a1 a{
+  width: 70px;
+  height: 70px;
+  display: block;
+  color: white;
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  border-radius: 50%;
+}
+.a1 a:before{
+  content: '\f2d3';
+  display: block;
+  margin: 13px 0;
+  transition: all 0.5s;
+}
+.a1 a:hover:before{
+  margin-top: -44px;
+}
+.a1 a:after{
+  content: '\f356';
+  display: block;
+  transition: all 0.5s;
+}

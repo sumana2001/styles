@@ -1,0 +1,205 @@
+/* styles for card-hover-transition - hariramjp777 */
+
+/* Basic CSS resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* main element containing cards is grid */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 10px;
+}
+
+/* style for cards */
+
+.card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+}
+
+.card .card-img {
+  height: 108px;
+  background-color: powderblue;
+}
+
+.card .card-body h1 {
+  margin: 30px 0 15px 0;
+  font-size: 20px;
+}
+
+.card .card-body p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Fade in and out */
+
+.fade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.fade:hover::before {
+  opacity: 1;
+}
+
+/* come from top using positions*/
+
+.come-from-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  z-index: -1;
+  transition: bottom 0.6s ease;
+}
+
+.come-from-top:hover::before {
+  bottom: 0;
+}
+
+/* trinangle clip-path */
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+  z-index: -1;
+  transition: clip-path 0.6s ease;
+}
+
+.triangle:hover::before {
+  clip-path: polygon(0% 0%, 200% 0%, 0% 200%);
+}
+
+/* circle clip-path */
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  clip-path: circle(0% at 50% 50%);
+  z-index: -1;
+  transition: clip-path 0.6s ease;
+}
+
+.circle:hover::before {
+  clip-path: circle(70% at 50% 50%);
+}
+
+/* inset clip-path */
+
+.inset::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  clip-path: inset(100%);
+  z-index: -1;
+  transition: clip-path 0.6s ease;
+}
+
+.inset:hover::before {
+  clip-path: inset(0);
+}
+
+/* scale in hover */
+
+.left-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: #e5e5e5;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s ease;
+}
+
+.left-right:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* i-card for faq using clip-path */
+
+.i-card {
+  width: calc(200% + 20px);
+  padding: 60px;
+  clip-path: circle(7% at 92% 15%);
+  background-color: powderblue;
+  transition: clip-path 0.6s ease;
+}
+
+.i-card span {
+  position: absolute;
+  top: 10%;
+  right: 7.3%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.i-card:hover {
+  clip-path: circle(70% at 50% 50%);
+}
+
+.i-card:hover span {
+  display: none;
+}
+
+@media (max-width: 556px) {
+  .i-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+
+.percent{
+    position: relative;
+    width: 500px;
+    height: 40px;
+    margin: 30px 10px;
+    overflow: hidden;
+}
+
+.percent .progress1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(165, 11, 11);
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+.percent .progress2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(11, 65, 165);
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}.percent .progress3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgb(11, 133, 7);
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+@keyframes animate{
+    from{
+        width:20%;
+    }
+}

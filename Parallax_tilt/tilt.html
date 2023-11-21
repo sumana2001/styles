@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="imgBx">
+                <img src="aniket.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>Tilt Box Hover Effects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nobis eos exercitationem, eum alias recusandae doloribus id fugiat non nesciunt corporis architecto illo et tenetur ex laborum ipsam ratione placeat.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="imgBx">
+                <img src="sumana.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>Tilt Box Hover Effects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nobis eos exercitationem, eum alias recusandae doloribus id fugiat non nesciunt corporis architecto illo et tenetur ex laborum ipsam ratione placeat.</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+</html>

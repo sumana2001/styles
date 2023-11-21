@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+h1 {
+  margin: 16px 0;
+  border-left: 5px solid #e74c3c;
+  padding-left: 16px;
+}
+
+.container {
+  padding: 48px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .group {
+  padding: 8px 48px;
+  margin: 8px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: "";
+  background: url("img/check-circle.svg");
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -44px;
+  top: -8px;
+
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before {
+  transform: scale(1) rotateZ(0deg);
+}
+
+label::after {
+  content: "";
+  border: 2px solid rgb(3, 53, 3);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+  border-radius: 50%;
+}

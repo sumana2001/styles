@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Slanted Navbar</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="logo">LOGO</div>
+        <div class="navbar">
+            <div class="nav-button">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">LOCATION</a></li>
+                    <li><a href="">TESTIMONIAL</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="hero">
+            <h1>COMPANY NAME<br>
+                <span>INTRODUCING</span>
+            </h1>
+            <div class="button">
+                <a href="" class="button1">Get Started</a>
+                <a href="" class="button2">Get Featured</a>
+            </div>
+        </section>
+    </div>
+    <script>
+var navButton = document.querySelector('.nav-button');
+var navMenu = document.querySelector('.nav-menu');
+var win = window;
+
+function openMenu(event) {
+  
+  navButton.classList.toggle('active');
+  navMenu.classList.toggle('active');
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+}
+  
+function closeMenu(event) {
+  if (navButton.classList.contains('active')) {
+    navButton.classList.remove('active');
+    navMenu.classList.remove('active');
+  }
+}
+  navButton.addEventListener('click', openMenu, false);
+
+win.addEventListener('click',closeMenu, false);
+    </script>
+</body>
+</html>

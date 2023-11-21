@@ -1,0 +1,80 @@
+body{
+
+
+background:  #0d0d0d;
+}
+ul{
+  transform :rotate(-25deg) skew(20deg);
+}
+ul li{
+  align-content: center;
+  display: inline-block;
+
+  margin-top: 200px;
+  margin-left: 100px;
+  width: 80px;
+  height: 80px;
+  background:  #333333;
+
+}
+ul li  span{
+  position: absolute;
+display: inline-block;
+color: white;
+padding: 20px;
+font-size: 40px !important;
+height: 40px;
+width: 40px;
+
+opacity: 0.2;
+
+}
+
+ul li:hover  span{
+
+opacity: 1;
+transition: 0.2s;
+background: grey;
+}
+ul li:hover span:nth-child(5){
+  transform:translate(40px,-40px);
+  opacity: 1;
+
+}
+ul li:hover span:nth-child(4){
+  transform:translate(30px,-30px);
+  opacity: 0.8;
+  width: 40px;
+  height:40px;
+}
+ul li:hover span:nth-child(3){
+  transform:translate(20px,-20px);
+  opacity: 0.6;
+}
+ul li:hover span:nth-child(2){
+  transform:translate(10px,-10px);
+  opacity: 0.4;
+}
+ul li:hover span:nth-child(1){
+  transform:translate(0px,0px);
+  opacity: 0.2;
+
+}
+
+
+
+ul li:nth-child(1):hover span{
+   background:darkblue;
+}
+ul li:nth-child(2):hover span{
+   background: green;
+}
+ul li:nth-child(3):hover span{
+   background: blue;
+}
+ul li:nth-child(4):hover span{
+   background: #55acee;
+}
+ul li:nth-child(5):hover span{
+   background:darkred;
+}
