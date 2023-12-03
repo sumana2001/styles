@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#weather-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#show-weather-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+#show-weather-btn:hover {
+  transform: scale(1.2);
+}
+
+#show-weather-btn i {
+  color: #FFD700;
+  font-size: 24px;
+}
